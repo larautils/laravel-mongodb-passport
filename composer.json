@@ -1,39 +1,38 @@
 {
-    "name": "designmynight/laravel-mongodb-passport",
+    "name"       : "larautils/mongodb-passport",
     "description": "A package to allow laravel/passport use with jenssegers/laravel-mongodb",
-    "homepage": "https://github.com/designmynight/laravel-mongodb-passport",
-    "license": "MIT",
-    "keywords": [
-        "laravel",
-        "laravel-mongodb",
-        "laravel-mongodb-passport",
-        "laravel-passport",
-        "mongodb",
-        "passport",
-        "designmynight"
+    "license"    : "MIT",
+    "keywords"   : [
+        "laravel", "laravel-mongodb", "mongodb-passport", "laravel-passport", "mongodb", "passport", "larautils"
     ],
-    "require": {
-        "illuminate/support": "^5.5",
-        "jenssegers/mongodb": "3.3.*",
-        "laravel/passport": "4.0.*"
-    },
-    "autoload": {
-        "psr-4": {
-            "DesignMyNight\\Mongodb\\": "src"
-        }
-    },
+
     "authors": [
         {
-            "name": "Steve Porter",
-            "email": "steve@designmynight.com",
-            "role": "Developer"
+            "name" : "Bruno Goncalves",
+            "email": "bugotech@gmail.com"
         }
     ],
-    "extra": {
+
+    "require": {
+        "illuminate/support": "5.6.*",
+        "jenssegers/mongodb": "3.4.*",
+        "laravel/passport"  : "5.0.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "LaraUtils\\MongoDb\\Password\\": "src/"
+        }
+    },
+
+    "extra"  : {
         "laravel": {
             "providers": [
-                "DesignMyNight\\Mongodb\\MongodbPassportServiceProvider"
+                "LaraUtils\\MongoDb\\Passport\\PassportServiceProvider"
             ]
         }
-    }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable"    : true
 }

@@ -1,6 +1,4 @@
-<?php
-
-namespace DesignMyNight\Mongodb\Passport;
+<?php namespace LaraUtils\MongoDb\Passport\Models;
 
 use Jenssegers\Mongodb\Eloquent\Model;
 
